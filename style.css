@@ -1,0 +1,371 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;500;700&display=swap');
+
+
+body{
+    background-image: url(imagens/arte-de-fundo-de-areia-de-pedras-zen-empilhadas-do-conceito-de-equilibrio.jpg);
+    background-size: contain;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+header{
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  justify-content: space-around;
+  align-items: center;
+  font-family: garamond;
+  color: rgb(28, 28, 136);
+  font-size: 18px;
+  font-weight: normal;
+}
+
+li{
+  display: inline-block;
+  margin: 20px;
+}
+
+nav li a{
+  display: inline-block;
+  color: rgb(28, 28, 136);
+  text-decoration: none;
+  font-size: 18px;
+  }
+
+nav li a:hover{
+  background-color: rgb(225, 211, 222);
+  padding: 10px;
+}
+.dropdown-menu{
+  position: absolute;
+  display: none;
+  
+}
+
+.dropdown-menu a{
+  display: block;
+  padding: 10px;
+  }
+
+.dropdown:hover .dropdown-menu{
+  display: block;
+    
+}
+
+.cabecalho-imagem{
+  height: 80px;
+  width: 80px;
+}
+
+.conteudo{
+border-top: 0.2px solid  rgb(176, 176, 201);  
+}
+
+.conteudo-principal{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-family: garamond;
+  color: rgb(28, 28, 136);
+}
+
+.conteudo-principal-escrito{
+  display: flex;
+  flex-direction: column;
+  gap:30px;
+}
+
+.conteudo-principal-escrito-titulo{
+  font-family: garamond;
+  color: rgb(28, 28, 136);
+  font-size: 48px;
+  padding: 60px;
+  font-weight: bold;
+}
+
+.conteudo-principal-escrito-subtitulo{
+ 
+  font-family: garamond;
+  color: rgb(28, 28, 136);
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.data{
+  font-family: garamond;
+  color: rgb(28, 28, 136);
+  font-size: 18px;
+  text-align: center;
+  }
+
+   .mapa-imagem{
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  height: 400px;
+  padding-left: 50px;
+  }
+ 
+p {
+
+  font-family: garamond;
+  font-size: 28px;
+  text-align: justify;
+  color: rgb(28, 28, 136); 
+  line-height: 50px;
+     
+}
+
+.dia{
+  display: flex;
+  flex-direction: row;
+}
+
+form{
+  display: grid;
+  grid-template-columns: max-content;
+  font-family: garamond;
+  font-size: 18px;
+  text-align: center;
+  color: rgb(28, 28, 136);
+}
+
+.content{
+  display: grid;
+  grid-template-columns: max-content;
+  align-self: auto;
+   
+}
+
+form [type="submit"] {
+  height: 50px;
+  width: 100%;
+  background-color:  rgb(228, 205, 221);
+  color:  rgb(28, 28, 136);
+}
+
+form [type="submit"]:hover {
+ cursor: pointer;
+}
+
+input{
+  margin-top: 20px;
+  height: 20px;
+  width: 300px;
+  padding: 15px;
+  border-radius: 20px;
+  border: none;
+
+}
+
+.card {
+  box-shadow: 0 40px 80px 0 rgba(0, 0, 0, 0.2);
+  transition: 3s;
+  width: 40%;
+  padding: 50px;
+  border-radius: 20px;
+   
+}   
+
+
+.card-titulo{
+  font-family: garamond;
+  font-size: 28px;
+  text-align: justify;
+  color: rgb(28, 28, 136);
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  font-family: garamond;
+  font-size: 28px;
+  text-align: justify;
+  color: rgb(28, 28, 136);
+  max-width: 800px;
+  
+}
+
+div button{
+  font-family: garamond;
+  font-size: 18px;
+  color: rgb(28, 28, 136);
+  border-radius: 20px;
+  
+}
+
+h2 {
+  font-family: garamond;
+  font-size: 28px;
+  text-align: left;
+  color: rgb(28, 28, 136); 
+  padding: 20px; 
+}
+
+.mapa-imagem{
+  width: 400px;
+  height: 300px;
+  }
+
+h3 {
+  font-family: garamond;
+  font-size: 18px;
+  text-align: center;
+  color: rgb(28, 28, 136); 
+  padding-top: 20px; 
+}
+
+footer{
+  font-family: garamond;
+  font-size: 18px;
+  text-align: center;
+  color: rgb(28, 28, 136); 
+  padding-top: 20px;
+  font-weight: bold;
+}
+
+div{
+  padding: 10px;
+}
+
+#email-btn{
+  border: 10px solid rgb(228, 205, 221); 
+  border-radius: 5px;
+  text-decoration: underline;
+  color: rgb(28, 28, 136);
+  font-weight: 400px;
+  padding: 15px;
+  }
+
+  .span-required{
+    display: none;
+  }
+  .slider{
+    margin: 0 auto;
+    width: 600px;
+    height: 400px;
+    overflow: hidden;
+}
+
+.slides{
+    width: 1000%;
+    height: 400px;
+    display: flex;
+}
+
+.slides input{
+    display: none;
+}
+.slide{
+    width: 10%;
+    position: relative;
+    transition: 2s;
+}
+.slide img{
+    width: 700px;
+}
+.manual-navigation{
+    position: absolute;
+    width: 600px;
+    margin-top: -30px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn{
+    border: 2px solid rgb(46, 19, 156);;
+    padding: 5px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 1s;
+    
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 30px;
+}
+.margin-btn:hover{
+    background-color: blue;
+}
+#radio1:checked~ .first{
+    margin-left: 0;    
+}
+#radio2:checked~ .first{
+    margin-left: -11%;    
+}
+#radio3:checked~ .first{
+    margin-left: -21%;    
+}
+#radio4:checked~ .first{
+    margin-left: -32%;    
+}
+#radio5:checked~ .first{
+    margin-left: -42%;    
+}
+#radio6:checked~ .first{
+    margin-left: -52%;    
+}
+#radio7:checked~ .first{
+    margin-left: -62%;    
+}
+#radio8:checked~ .first{
+    margin-left: -73%;    
+}
+#radio9:checked~ .first{
+    margin-left: -83%;    
+}
+#radio10:checked~ .first{
+    margin-left: -95%;    
+}
+.navigation-auto div{
+    border: 2px solid rgb(46, 19, 156);
+    padding: 5px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.navigation-auto{
+    position: absolute;
+    width: 580px;
+    margin-top:380px;
+    display: flex;
+    justify-content: center;
+}
+.navigation-auto div:not(:last-child){
+    margin-right: 30px;
+}
+#radio1:checked~ .navigation-auto .auto-btn1{
+    background-color: rgb(28, 28, 136);
+}
+#radio2:checked~ .navigation-auto .auto-btn2{
+    background-color:rgb(28, 28, 136);
+}
+#radio3:checked~ .navigation-auto .auto-btn3{
+    background-color:rgb(28, 28, 136);
+}
+#radio4:checked~ .navigation-auto .auto-btn4{
+    background-color:rgb(28, 28, 136);
+}
+#radio5:checked~ .navigation-auto .auto-btn5{
+    background-color: rgb(28, 28, 136);
+}
+#radio6:checked~ .navigation-auto .auto-btn6{
+    background-color: rgb(28, 28, 136);
+}
+#radio7:checked~ .navigation-auto .auto-btn7{
+    background-color: rgb(28, 28, 136);
+}
+#radio8:checked~ .navigation-auto .auto-btn8{
+    background-color: rgb(28, 28, 136);
+}
+#radio9:checked~ .navigation-auto .auto-btn9{
+    background-color: rgb(28, 28, 136);
+}
+#radio10:checked~ .navigation-auto .auto-btn10{
+    background-color: rgb(28, 28, 136);;
+}

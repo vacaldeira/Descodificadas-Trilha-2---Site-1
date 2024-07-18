@@ -1,0 +1,70 @@
+@media screen and (max-width: 760px){
+
+header{ flex-direction: column;
+}
+
+main{
+    flex-direction: column;
+}
+
+input{
+    margin: 0 auto;
+}
+
+input{
+    align-self: center;
+    margin-top: 20px;
+    height: 20px;
+    width: 150px;
+    padding: 15px;
+}
+
+.mapa-imagem{
+    width: 200px;
+    height: 200px;
+
+}
+.slider{
+    width: 250px;
+    height: 150px;
+}
+.slides{
+    width: 900%;
+    height: 200px;
+    display: flex;
+}
+.manual-navigation{
+    width: 190px;
+    margin-top: -80px;   
+}
+.manual-btn{
+    padding: 2px;
+}
+.navigation-auto div{
+
+    padding: 2px;
+}
+.navigation-auto{
+    width: 20px;
+    margin-top:130px;
+    
+}
+.slide img{
+    width: 250px;
+}
+.navigation-auto div{
+    padding: 2px;
+}
+ul{
+    
+    text-align: center;
+    padding: 5px;
+}
+
+.cabecalho-imagem{
+    width: 30%;
+    height: 30%;
+
+}
+
+}

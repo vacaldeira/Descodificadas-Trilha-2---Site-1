@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="mesa quantica estelar zen bem estar">
+    <meta name="keywords" content="HTML, CSS">
+    <meta name="Evanessa Ramos" content="Descodificadas">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="content-language" content="pt-br">
+    <title>Sobre a Terapia</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="canonical" href="https://127.0.0.1:5502/index.html"/>
+    <link rel="shortcut icon" href="Imagens/Borboleta.ico" type="image/x-icon">
+    <script type="text/javascript">
+        startList = function() {
+       if (document.all&&document.getElementById) {
+       navRoot = document.getElementById("menuDropDown");
+       for (i=0; i<navRoot.childNodes.length; i++) {
+       node = navRoot.childNodes[i];
+       if (node.nodeName=="LI") {
+       node.onmouseover=function() {
+       this.className+=" over";
+       }
+       node.onmouseout=function() {
+       this.className=this.className.replace
+       (" over", "");
+       }
+       }
+       }
+    }
+   }
+   window.onload=startList;
+</script>
+
+</head>
+
+<body>
+
+    <div>
+        <a href="mailto:vacaldeira@yahoo.com.br" id="email-btn">
+            Me envie um e-mail para mais informações</a> 
+        </div>
+        <div class="content">
+            <h3>Reserve o seu horário</h3>  
+            <form id="form">      
+            <div>
+            <input type="text" name="nome" placeholder="Digite seu nome aqui" class="inputs required" oninput="nameValidate()">
+            <span class="span-required">Nome deve ter no mínimo 3 caracteres</span>
+            </div>
+            <div>
+            <input type="email" placeholder="Digite seu email aqui" class="inputs required"  oninput="emailValidate()">
+            <span class="span-required">Digite um email válido</span>
+            </div>
+            <div>
+            <input type="phone" name="telefone" placeholder="Digite seu telefone aqui" class="inputs required"  oninput="phoneValidate()">
+            <span class="span-required"> Colocar o DDD</span>
+            </div>
+            <div>
+            <button type="submit">Enviar</button>
+            </div>        
+        </form>
+        </div>
+        <section>
+            <div class="slider">
+                <div class="slides">
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <input type="radio" name="radio-btn" id="radio4">
+                <input type="radio" name="radio-btn" id="radio5">
+                <input type="radio" name="radio-btn" id="radio6">
+                <input type="radio" name="radio-btn" id="radio7">
+                <input type="radio" name="radio-btn" id="radio8">
+                <input type="radio" name="radio-btn" id="radio9">
+                <input type="radio" name="radio-btn" id="radio10">
+        
+                <div class="slide first">
+                    <img src="imagens/Alegria.jpeg" alt="alegria"/>
+                </div>
+                <div class="slide">
+                    <img src="imagens/Bem estar.jpg" alt="bem-estar"/>
+                </div>
+                <div class="slide">
+                    <img src="imagens/brain.jpeg" alt="brain"/>
+                </div>
+                <div class="slide">
+                    <img src="imagens/Equilibrio.jpg" alt="equilíbrio"/>
+                </div>
+                <div class="slide">
+                    <img src="imagens/Feng.jpeg" alt="feng shui"/>
+                </div>
+                <div class="slide">
+                    <img src="imagens/green.jpeg" alt="green"/>
+                </div>
+                <div class="slide">
+                    <img src="imagens/heart.jpeg" alt="heart"/>
+                </div>
+                <div class="slide">
+                    <img src="imagens/Saudacao.jpeg" alt="saudação"/>
+                </div>
+                <div class="slide">
+                    <img src="imagens/Sorriso.jpeg" alt="sorriso"/>
+                </div>
+                <div class="slide">
+                    <img src="imagens/sun.jpeg" alt="sun"/>
+                </div>
+        
+                   <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                    <div class="auto-btn4"></div>
+                    <div class="auto-btn5"></div>
+                    <div class="auto-btn6"></div>
+                    <div class="auto-btn7"></div>
+                    <div class="auto-btn8"></div>
+                    <div class="auto-btn9"></div>
+                    <div class="auto-btn10"></div>
+                    </div>
+                </div>
+                    <div class="manual-navigation">
+                        <label for="radio1" class="manual-btn"></label>
+                        <label for="radio2" class="manual-btn"></label>
+                        <label for="radio3" class="manual-btn"></label>
+                        <label for="radio4" class="manual-btn"></label>
+                        <label for="radio5" class="manual-btn"></label>
+                        <label for="radio6" class="manual-btn"></label>
+                        <label for="radio7" class="manual-btn"></label>
+                        <label for="radio8" class="manual-btn"></label>
+                        <label for="radio9" class="manual-btn"></label>
+                        <label for="radio10" class="manual-btn"></label>
+                    </div>
+            </div>
+               
+        </section>
+        
+        
+    
+</body>
+<script>
+
+    const form = document.getElementById('form');
+    const campos = document.querySelectorAll('.required');
+    const spans = document.querySelectorAll('.span-required');
+    const emailRegex = /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/;
+
+    form.addEventListener('submit', (event) => {
+        event.preventDefault();
+        nameValidate();
+        emailValidate();
+        phoneValidate();
+    });
+
+    function setError(index){
+        campos[index].style.border = '2px solid red';
+        spans[index].style.display = 'block';
+    }
+
+    function removeError(index){
+        campos[index].style.border = '';
+        spans[index].style.display = 'none';
+    }
+
+
+
+    function nameValidate(){
+        if(campos[0].value.length < 3)
+        {
+           setError(0);
+
+        }
+        else
+        {
+            removeError(0);
+        }
+    }
+
+    function emailValidate(){
+        if(!emailRegex.test(campos[1].value))
+    {
+        setError(1);
+    }
+    else{
+
+        removeError(1);
+    }
+        
+    }
+
+    function phoneValidate(){
+        if(campos[2].value.length < 11)
+        {
+           setError(2);
+
+        }
+        else
+        {
+            removeError(2);
+        }
+    }
+</script>
+</html>
